@@ -1,0 +1,47 @@
+:set number
+:set backspace=indent,eol,start
+:set clipboard=unnamed
+:set relativenumber
+:set autoindent
+:syntax on
+execute pathogen#infect()
+:set tabstop=4
+:set expandtab
+"let g:neocomplcache_enable_at_startup = 1
+" autocomplete popup color.
+"hi Pmenu ctermbg=8
+"hi PmenuSel ctermbg=1
+"hi PmenuSbar ctermbg=0
+:command NT NERDTree
+:set statusline+=%F
+"start NERDTree automatically
+"au VimEnter *  NERDTree
+"focus on vim window automatically (as opposed to NERDTree window)
+"autocmd VimEnter * wincmd p
+:let g:NERDTreeWinSize=65
+hi EasyMotionTarget ctermbg=none ctermfg=green
+hi EasyMotionTarget2First ctermbg=none ctermfg=green
+hi EasyMotionTarget2Second ctermbg=none ctermfg=yellow
+hi EasyMotionMoveHL ctermbg=green ctermfg=black
+let g:EasyMotion_keys = 'asdghklwertyuiopzcbnmfj'
+let NERDTreeShowHidden=1
+let mapleader = '8'
+:set ignorecase
+:set statusline+=%F
+:set laststatus=2
+:command CP CtrlP
+:command TB TagbarToggle
+:command SP set paste
+:command SNP set nopaste
+:imap jj <Esc>
+:map ( "+
+"autocmd VimEnter * RltvNmbr
+autocmd VimEnter * NoMatchParen
+:map J 8j
+:map K 8k
+:map H 8h
+:map L 8l
+set colorcolumn=120
+"highlight columns beyond the 80th
+"highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+"match OverLength /\%81v.\+/
